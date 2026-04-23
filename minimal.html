@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minima MiniDapp</title>
+  <link rel="stylesheet" href="minimal.css">
+</head>
+<body>
+
+<header>
+  <h1>🚀 Minima MiniDapp</h1>
+  <p>Interact with Minima using MiniMask</p>
+</header>
+
+<div class="container">
+
+  <div class="box">
+    <h2>🔗 Connect to MiniMask</h2>
+    <button onclick="connectMinima()">Connect Wallet</button>
+    <p id="status">Not connected</p>
+  </div>
+
+  <div class="box">
+    <h2>💸 Send Transaction</h2>
+    <input type="text" id="address" placeholder="Enter Address">
+    <input type="number" id="amount" placeholder="Enter Amount">
+    <button onclick="sendTransaction()">Send</button>
+    <p id="txStatus"></p>
+  </div>
+
+  <div class="box">
+    <h2>💬 Simple Chat (Local)</h2>
+    <input type="text" id="chatInput" placeholder="Type message">
+    <button onclick="sendMessage()">Send</button>
+    <div id="chatBox"></div>
+  </div>
+
+</div>
+
+<script src="minimal.js"> </script>
+
+</body>
+</html>
